@@ -12,7 +12,7 @@
 #include <fcntl.h>
 #include <errno.h>
 
-extern char **qen;
+extern char **environ;
 
 /**
  * struct ka - linked list
@@ -61,7 +61,7 @@ typedef struct mnm
 	kat *q;
 	kat *his;
 	kat *al;
-	char **qenv;
+	char **environ;
 	int envch;
 	int st;
 	char **cb;
