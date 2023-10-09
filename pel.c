@@ -12,7 +12,7 @@ int pel(mnmt *in)
 	size_t h;
 
 	for (h = 0; qen[h]; h++)
-		add_node_end(&ok, qen[h], 0);
+		ane(&ok, qen[h], 0);
 	in->q = ok;
 	return (0);
 }
