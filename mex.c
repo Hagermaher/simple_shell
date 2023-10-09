@@ -4,7 +4,7 @@
  * @in: structre
  * Return: exits
  */
-int mex(info_t *in)
+int mex(mnmt *in)
 {
 	int eh;
 

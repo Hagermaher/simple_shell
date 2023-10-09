@@ -4,7 +4,7 @@
  * @in: struct
  * Return: 0
  */
-int mh(info_t *in)
+int mh(mnmt *in)
 {
 	char **ag;
 
