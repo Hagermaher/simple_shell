@@ -23,8 +23,8 @@ extern char **qen;
 typedef struct ka
 {
 	int n;
-	char *str;
-	struct liststr *x;
+	char *st;
+	struct ka *x;
 } kat;
 
 /**
@@ -37,8 +37,8 @@ typedef struct ka
  * @enm: error code
  * @lcf: line input count
  * @fn: filename
- * @env: linked list
- * @environ: environ
+ * @q: linked list
+ * @qenv: environ
  * @his: history
  * @al : alias
  * @envch: environ changed
@@ -58,10 +58,10 @@ typedef struct mnm
 	int enm;
 	int lcf;
 	char *fn;
-	list_t *env;
-	list_t *his;
-	list_t *al;
-	char **environ;
+	kat *q;
+	kat *his;
+	kat *al;
+	char **qenv;
 	int envch;
 	int st;
 	char **cb;
