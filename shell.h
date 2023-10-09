@@ -12,20 +12,20 @@
 #include <fcntl.h>
 #include <errno.h>
 
-extern char **environ;
+extern char **qen;
 
 /**
- * struct liststr - linked list
+ * struct ka - linked list
  * @n: the number field
  * @str: a string
  * @x: points to the next node
  */
-typedef struct liststr
+typedef struct ka
 {
 	int n;
 	char *str;
 	struct liststr *x;
-} list_t;
+} kat;
 
 /**
  * struct mnm - contains pseudo
@@ -68,18 +68,20 @@ typedef struct mnm
 	int cbt;
 	int rf;
 	int hisc;
-} info_t;
-#define INFO_INIT
+} mnmt;
+#define QIN {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
+	0, 0, 0}
 /**
- * struct builtin - string  related fun
+ * struct qbin - string  related fun
  * @t: flag
  * @f: function
  */
-typedef struct builtin
+
+typedef struct qbin
 {
 	char *t;
-	int (*f)(info_t *);
-} builtin_table;
+	int (*f)(mnmt *);
+} qbintable;
 
 int hsh(info_t *, char **);
 int fbu(info_t *);
