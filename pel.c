@@ -11,8 +11,8 @@ int pel(mnmt *in)
 	kat *ok = NULL;
 	size_t h;
 
-	for (h = 0; qen[h]; h++)
-		ane(&ok, qen[h], 0);
+	for (h = 0; environ[h]; h++)
+		ane(&ok, environ[h], 0);
 	in->q = ok;
 	return (0);
 }
