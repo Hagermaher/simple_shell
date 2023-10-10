@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
- * in - return true value
- * @in: struct
- * Return: 1
+ * in - Remable
+ * @in: Structning po
+ *  Return: Aays 0
  */
 int in(mnmt *in)
 {

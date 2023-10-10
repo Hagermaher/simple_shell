@@ -1,12 +1,12 @@
 #include "shell.h"
 /**
- * isa - check
- * @z: char
- * Return: 1 or 0
+ * isa - Remable
+ * @g: Structning po
+ *  Return: Aays 0
  */
-int isa(int z)
+int isa(int g)
 {
-	if ((z >= 'a' && z <= 'z') || (z >= 'A' && z <= 'Z'))
+	if ((g >= 97 && g <= 122) || (g >= 65 && g <= 90))
 		return (1);
 	else
 		return (0);
