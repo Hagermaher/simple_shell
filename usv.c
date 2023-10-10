@@ -17,7 +17,7 @@ int usv(mnmt *ok, char *m)
 		return (0);
 	while (ok)
 	{
-		b = starts_with(ok->s, m);
+		b = sw(ok->s, m);
 		if (b && *b == '=')
 		{
 			in->envch = dnai(&(in->q), h);
