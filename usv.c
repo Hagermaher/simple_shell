@@ -7,7 +7,7 @@
  * Return: Alwys 0
  */
 
-int usv(mnmt *ok, char *m)
+int usv(mnmt *in, char *m)
 {
 	kat *ok = in->q;
 	size_t h = 0;
