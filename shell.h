@@ -92,7 +92,7 @@ char *dc(char *, int, int);
 int *fp(mnmt *, char *, char *);
 int lhsh(char **);
 void eps(char *);
-void epc(char);
+int epc(char);
 int pfd(char z, int f);
 int psfd(char *str, int f);
 int _strlen(char *);

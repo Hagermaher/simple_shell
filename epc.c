@@ -6,8 +6,8 @@
  */
 int epc(char z)
 {
-	st int w;
-	st char bu[1024];
+	static int w;
+	static char bu[1024];
 
 	if (z == -1 || z >= 1024)
 	{
@@ -15,6 +15,6 @@ int epc(char z)
 		w = 0;
 	}
 	if (z != -1)
-		bu[w++] = c;
+		bu[w++] = z;
 	return (1);
 }
