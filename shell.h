@@ -23,7 +23,7 @@ extern char **environ;
 typedef struct ka
 {
 	int n;
-	char *st;
+	char *s;
 	struct ka *x;
 } kat;
 

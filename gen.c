@@ -14,7 +14,7 @@ char *gen(mnmt *in, const char *es)
 
 	while (ok)
 	{
-		v = sw(ok->st, es);
+		v = sw(ok->s, es);
 		if (v && *v)
 			return (v);
 		ok = ok->x;
