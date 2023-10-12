@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * mus - Remable
+ * rst - Remable
  * @o: b
  * @n: Structning po
  * Return: Aays 0
