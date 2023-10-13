@@ -17,9 +17,9 @@ int wh(mnmt *in)
 	free(fin);
 	if (f == -1)
 		return (-1);
-	for (nd = in->his; nd; nd = nd->n)
+	for (nd = in->his; nd; nd = nd->x)
 	{
-		psfd(nd->str, f);
+		psfd(nd->s, f);
 		pfd('\n', f);
 	}
 	pfd(-1, f);
