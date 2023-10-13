@@ -5,7 +5,7 @@
  * @str: string
  * Return: 0
  */
-int ual(mnmt *in, char *str)
+int uali(mnmt *in, char *str)
 {
 	char *v, z;
 	int r;

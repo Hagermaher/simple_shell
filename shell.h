@@ -160,5 +160,6 @@ void chc(mnmt *, char *, size_t *, size_t, size_t);
 int ral(mnmt *);
 int rva(mnmt *);
 int rst(char **, char *);
-
+int uali(mnmt *in, char *str);
+int sal(mnmt *in, char *str)
 #endif
