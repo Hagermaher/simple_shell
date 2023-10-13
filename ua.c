@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * ual - sets string
+ * uali - sets string
  * @in: struct
  * @str: string
  * Return: 0
