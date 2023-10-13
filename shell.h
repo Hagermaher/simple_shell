@@ -17,7 +17,7 @@ extern char **environ;
 /**
  * struct ka - linked list
  * @n: the number field
- * @str: a string
+ * @s: a string
  * @x: points to the next node
  */
 typedef struct ka
@@ -161,5 +161,6 @@ int ral(mnmt *);
 int rva(mnmt *);
 int rst(char **, char *);
 int uali(mnmt *in, char *str);
-int sal(mnmt *in, char *str)
+int sal(mnmt *in, char *str);
+int pal(kat *nd);
 #endif
