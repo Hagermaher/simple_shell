@@ -163,4 +163,5 @@ int rst(char **, char *);
 int uali(mnmt *in, char *str);
 int sal(mnmt *in, char *str);
 int pal(kat *nd);
+char *dc(char *pas, int star, int sto);
 #endif
