@@ -28,7 +28,7 @@ char **stw(char *str, char y)
 		ke = 0;
 		while (str[w + ke] != y && str[w + ke] && str[w + ke] != y)
 			ke++;
-		es[j] = malloc((ke + 1) * sizeof(char));
+		es[g] = malloc((ke + 1) * sizeof(char));
 		if (!es[g])
 		{
 			for (ke = 0; ke < g; ke++)
@@ -41,5 +41,5 @@ char **stw(char *str, char y)
 		es[g][im] = 0;
 	}
 	es[g] = NULL;
-	return (s);
+	return (es);
 }
