@@ -10,8 +10,9 @@
 int main(int ac, char **av)
 {
 	int o;
-	mnmt in[] = {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL,
-		0, 0, NULL, 0, 0, 0};
+	mnmt in[18]; = {{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL,
+		0, 0, NULL, 0, 0, 0}};
+
 
 	o = 2;
 	asm ("mov %1, %0\n\t"

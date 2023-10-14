@@ -9,7 +9,7 @@ int epc(char z)
 	static int w;
 	static char bu[1024];
 
-	if (z == -1 || z >= 1024)
+	if (z == -1 || w >= 1024)
 	{
 		write(2, bu, w);
 		w = 0;
