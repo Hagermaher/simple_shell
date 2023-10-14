@@ -31,7 +31,7 @@ char *fpa(mnmt *in, char *pas, char *cm)
 				_strcat(pa, cm);
 			}
 			if (ic(in, pa))
-				return (path);
+				return (pa);
 			if (!pas[w])
 				break;
 			cpo = w;

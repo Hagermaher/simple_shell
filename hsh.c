@@ -7,30 +7,32 @@
  */
 int hsh(mnmt *in, char **avi)
 {
-	ssize_t m = 0;
-	int b_r = 0;
+	ssize_t m;
+	int b_r;
 
+	m = 0;
+	b_r = 0;
 	while (m != -1 && b_r != -2)
 	{
 		cin(in);
-		if (in(in))
+		if (inter(in))
 			_puts("$ ");
 		epc(-1);
 		m = gi(in);
 		if (m != -1)
 		{
-			ssin(in, avi);
-			b_r = fbu(info);
+			ssn(in, avi);
+			b_r = fbu(in);
 			if (b_r == -1)
 				fc(in);
 		}
-		else if (in(in))
+		else if (inter(in))
 			_putchar('\n');
 		fin(in, 0);
 	}
 	wh(in);
 	fin(in, 1);
-	if (!in(in) && in->st)
+	if (!inter(in) && in->st)
 		exit(in->st);
 	if (b_r == -2)
 	{

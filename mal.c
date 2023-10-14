@@ -6,17 +6,20 @@
  */
 int mal(mnmt *in)
 {
-	int w = 0;
-	char *v = NULL;
-	kat *nd = NULL;
+	int w;
+	char *v;
+	kat *nd;
 
+	nd = NULL;
+	v = NULL;
+	w = 0;
 	if (in->argc == 1)
 	{
 		nd = in->al;
 		while (nd)
 		{
 			pal(nd);
-			nd = nd->n;
+			nd = nd->x;
 		}
 		return (0);
 	}

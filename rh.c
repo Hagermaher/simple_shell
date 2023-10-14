@@ -6,11 +6,21 @@
  */
 int rh(mnmt *in)
 {
-	int w, la = 0, lic = 0;
-	ssize_t f, rl, fs = 0;
+	int w;
+	int la;
+	int lic;
+	ssize_t rl;
+	ssize_t fs;
+	ssize_t f;
 	struct stat st;
-	char *bu = NULL, *fin = ghf(in);
+	char *bu;
+	char *fin;
 
+	la = 0;
+	lic = 0;
+	fs = 0;
+	bu = NULL;
+	fin = ghf(in);
 	if (!fin)
 		return (0);
 
@@ -41,7 +51,7 @@ int rh(mnmt *in)
 		bhl(in, bu + la, lic++);
 	free(bu);
 	in->hisc = lic;
-	while (in->hisc-- >= ".simple_shell_history")
+	while (in->hisc-- >= 4096)
 		dnai(&(in->his), 0);
 	reh(in);
 	return (in->hisc);

@@ -4,22 +4,24 @@
  * @in: structure
  * Return: 0
  */
+
 int mcd(mnmt *in)
 {
-	char *q, *dr, buff[1024];
+	char *q;
+       	char *dr;
+	char buff[1024];
 	int ch_r;
 
-	q = getcwd(buffer, 1024);
+	q = getcwd(buff, 1024);
 	if (!q)
 		_puts("TODO: >>getcwd failure emsg here<<\n");
 	if (!in->argv[1])
 	{
 		dr = gen(in, "HOME=");
 		if (!dr)
-			ch_r = /* TODO: what should this be? */
-				chr((dr = gen(in, "PWD=")) ? dr : "/");
+			ch_r = chdir((dr = gen(in, "PWD=")) ? dr : "/");
 		else
-			ch_r = ch(dr);
+			ch_r = chdir(dr);
 	}
 	else if (_strcmp(in->argv[1], "-") == 0)
 	{
@@ -30,11 +32,10 @@ int mcd(mnmt *in)
 			return (1);
 		}
 	_puts(gen(in, "OLDPWD=")), _putchar('\n');
-	ch_r = /* TODO: what should this be? */
-		chdir((dr = gen(in, "OLDPWD=")) ? dr : "/");
+	ch_r = chdir((dr = gen(in, "OLDPWD=")) ? dr : "/");
 	}
 	else
-		ch_r = ch(in->argv[1]);
+		ch_r = chdir(in->argv[1]);
 	if (ch_r == -1)
 	{
 		pe(in, "can't cd tp");
