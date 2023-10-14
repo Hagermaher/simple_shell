@@ -6,7 +6,8 @@
  */
 int fbu(mnmt *in)
 {
-	int w, b_i_r = -1;
+	int w;
+	int b_i_r;
 	qbintable qb[] = {
 		{"exit", mex},
 		{"env", men},
@@ -19,11 +20,12 @@ int fbu(mnmt *in)
 		{NULL, NULL}
 	};
 
-	for (w = 0; qb[w].type; w++)
-		if (_strcmp(in->argv[0], qb[w].type) == 0)
+	b_i_r = -1;
+	for (w = 0; qb[w].t; w++)
+		if (_strcmp(in->argv[0], qb[w].t) == 0)
 		{
-			in->lic++;
-			b_i_r = qbin[w].f(in);
+			in->lc++;
+			b_i_r = qb[w].f(in);
 			break;
 		}
 	return (b_i_r);
