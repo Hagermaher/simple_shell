@@ -8,7 +8,7 @@
  */
 char *dc(char *pas, int star, int sto)
 	{
-	static char buf[1024];
+	static char bu[1024];
 	int w, ke;
 
 	w = 0;
