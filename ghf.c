@@ -12,13 +12,13 @@ char *ghf(mnmt *in)
 	dr = gen(in, "HOME=");
 	if (!dr)
 		return (NULL);
-	bu = malloc(sizeof(char) * (_strlen(dr) +
-			_strlen(".simple_shell_history") + 2));
+	bu = malloc(sizeof(char) * (wstrlen(dr) +
+			wstrlen(".simple_shell_history") + 2));
 	if (!bu)
 		return (NULL);
 	bu[0] = 0;
-	_strcpy(bu, dr);
-	_strcat(bu, "/");
-	_strcat(bu, ".simple_shell_history");
+	wstrcpy(bu, dr);
+	wstrcat(bu, "/");
+	wstrcat(bu, ".simple_shell_history");
 	return (bu);
 }

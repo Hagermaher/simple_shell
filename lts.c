@@ -23,7 +23,7 @@ char **lts(kat *h)
 		return (NULL);
 	for (o = 0; ok; ok = ok->x, o++)
 	{
-		s = malloc(_strlen(ok->s) + 1);
+		s = malloc(wstrlen(ok->s) + 1);
 		if (!s)
 		{
 			for (g = 0; g < o; g++)

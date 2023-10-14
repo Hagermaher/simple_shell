@@ -16,12 +16,12 @@ int sv(mnmt *in, char *y, char *u)
 	f = NULL;
 	if (!y || !u)
 		return (0);
-	f = malloc(_strlen(y) + _strlen(u) + 2);
+	f = malloc(wstrlen(y) + wstrlen(u) + 2);
 	if (!f)
 		return (1);
-	_strcpy(f, y);
-	_strcat(f, "=");
-	_strcat(f, u);
+	wstrcpy(f, y);
+	wstrcat(f, "=");
+	wstrcat(f, u);
 	ok = in->q;
 	while (ok)
 	{

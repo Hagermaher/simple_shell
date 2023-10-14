@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * _strlen - Remable
+ * wstrlen - Remable
  * @c: Structning po
  * Return: Aays 0
  */
 
-int _strlen(char *c)
+int wstrlen(char *c)
 {
 	int o;
 
