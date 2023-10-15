@@ -166,4 +166,5 @@ int pal(kat *nd);
 char *dc(char *pas, int star, int sto);
 char *fpa(mnmt *in, char *pas, char *cm);
 ssize_t ibu(mnmt *in, char **bu, size_t *l);
+ssize_t rbu(mnmt *in, char *bu, size_t *w);
 #endif
