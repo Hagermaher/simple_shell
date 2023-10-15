@@ -9,7 +9,7 @@ int sal(mnmt *in, char *str)
 {
 	char *v;
 
-	v = _strchr(str, '=');
+	v = wstrchr(str, '=');
 	if (!v)
 		return (1);
 	if (!*++v)

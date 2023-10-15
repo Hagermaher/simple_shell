@@ -21,7 +21,7 @@ kat *an(kat **h, const char *s, int n)
 	nh->n = n;
 	if (s)
 	{
-		nh->s = _strdup(s);
+		nh->s = wstrdup(s);
 		if (!nh->s)
 		{
 			free(nh);

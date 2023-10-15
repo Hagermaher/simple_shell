@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * _puts - Remable
+ * wputs - Remable
  * @s: Structning po
  * Return: Aays 0
  */
 
-void _puts(char *s)
+void wputs(char *s)
 {
 	int o;
 
@@ -15,7 +15,7 @@ void _puts(char *s)
 		return;
 	while (s[o] != '\0')
 	{
-		_putchar(s[o]);
+		wputchar(s[o]);
 		o++;
 	}
 }

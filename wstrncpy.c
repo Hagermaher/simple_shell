@@ -1,16 +1,18 @@
 #include "shell.h"
 /**
- * _strncpy - copy a string
+ * wstrncpy - copy a string
  * @dest: input value
  * @src: input value
  * @n: input value
  * Return: dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *wstrncpy(char *dest, char *src, int n)
 {
-	int j, u;
-	char *a = dest;
+	int j;
+	int u;
+	char *a;
 
+	a = dest;
 	u = 0;
 	while (src[u] != '\0' && u < n - 1)
 	{

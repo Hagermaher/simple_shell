@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * _putchar - Remable
+ * wputchar - Remable
  * @a: Structning po
  * Return: Aays 0
  */
 
-int _putchar(char a)
+int wputchar(char a)
 {
 	static int o;
 	static char b[1024];

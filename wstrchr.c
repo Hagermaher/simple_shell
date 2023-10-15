@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * _strchr - locate char
- * @a: string
+ * wstrchr - locate char
+ * @a: stvring
  * @z: char
  * Return: z
  */
-char *_strchr(char *a, char z)
+char *wstrchr(char *a, char z)
 {
 	do {
 		if (*a == z)

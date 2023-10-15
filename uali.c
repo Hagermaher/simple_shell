@@ -7,10 +7,11 @@
  */
 int uali(mnmt *in, char *str)
 {
-	char *v, z;
+	char *v;
 	int r;
+	char z;
 
-	v = _strchr(str, '=');
+	v = wstrchr(str, '=');
 	if (!v)
 		return (1);
 	z = *v;

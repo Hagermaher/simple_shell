@@ -18,18 +18,16 @@ void ssn(mnmt *in, char **av)
 		in->argv = st(in->arg, " \t");
 		if (!in->argv)
 		{
-
 			in->argv = malloc(sizeof(char *) * 2);
 			if (in->argv)
 			{
-				in->argv[0] = _strdup(in->arg);
+				in->argv[0] = wstrdup(in->arg);
 				in->argv[1] = NULL;
 			}
 		}
 		for (o = 0; in->argv && in->argv[o]; o++)
 			;
 		in->argc = o;
-
 		ral(in);
 		rva(in);
 	}

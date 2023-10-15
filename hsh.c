@@ -16,7 +16,7 @@ int hsh(mnmt *in, char **avi)
 	{
 		cin(in);
 		if (inter(in))
-			_puts("$ ");
+			wputs("$ ");
 		epc(-1);
 		m = gi(in);
 		if (m != -1)
@@ -27,7 +27,7 @@ int hsh(mnmt *in, char **avi)
 				fc(in);
 		}
 		else if (inter(in))
-			_putchar('\n');
+			wputchar('\n');
 		fin(in, 0);
 	}
 	wh(in);

@@ -13,11 +13,11 @@ size_t pli(const kat *c)
 	o = 0;
 	while (c)
 	{
-		_puts(cn(c->n, 10, 0));
-		_putchar(':');
-		_putchar(' ');
-		_puts(c->s ? c->s : "(nil)");
-		_puts("\n");
+		wputs(cn(c->n, 10, 0));
+		wputchar(':');
+		wputchar(' ');
+		wputs(c->s ? c->s : "(nil)");
+		wputs("\n");
 		c = c->x;
 		o++;
 	}

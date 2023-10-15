@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * in - Remable
+ * inter - Remable
  * @in: Structning po
  *  Return: Aays 0
  */

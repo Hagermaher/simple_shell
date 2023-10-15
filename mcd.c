@@ -8,13 +8,13 @@
 int mcd(mnmt *in)
 {
 	char *q;
-       	char *dr;
+	char *dr;
 	char buff[1024];
 	int ch_r;
 
 	q = getcwd(buff, 1024);
 	if (!q)
-		_puts("TODO: >>getcwd failure emsg here<<\n");
+		wputs("TODO: >>getcwd failure emsg here<<\n");
 	if (!in->argv[1])
 	{
 		dr = gen(in, "HOME=");
@@ -23,15 +23,15 @@ int mcd(mnmt *in)
 		else
 			ch_r = chdir(dr);
 	}
-	else if (_strcmp(in->argv[1], "-") == 0)
+	else if (wstrcmp(in->argv[1], "-") == 0)
 	{
 		if (!gen(in, "OLDPWD="))
 		{
-			_puts(q);
-			_putchar('\n');
+			wputs(q);
+			wputchar('\n');
 			return (1);
 		}
-	_puts(gen(in, "OLDPWD=")), _putchar('\n');
+	wputs(gen(in, "OLDPWD=")), wputchar('\n');
 	ch_r = chdir((dr = gen(in, "OLDPWD=")) ? dr : "/");
 	}
 	else

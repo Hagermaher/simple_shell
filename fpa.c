@@ -8,7 +8,7 @@
  */
 char *fpa(mnmt *in, char *pas, char *cm)
 {
-	int w; 
+	int w;
 	int cpo;
 	char *pa;
 

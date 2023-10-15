@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * _strcpy - Remable
+ * wstrcpy - Remable
  * @d: Structning po
  * @s: f
  * Return: Aays 0
  */
 
-char *_strcpy(char *d, char *s)
+char *wstrcpy(char *d, char *s)
 {
 	int o;
 

@@ -22,7 +22,7 @@ int fbu(mnmt *in)
 
 	b_i_r = -1;
 	for (w = 0; qb[w].t; w++)
-		if (_strcmp(in->argv[0], qb[w].t) == 0)
+		if (wstrcmp(in->argv[0], qb[w].t) == 0)
 		{
 			in->lc++;
 			b_i_r = qb[w].f(in);

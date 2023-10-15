@@ -18,10 +18,10 @@ int ral(mnmt *in)
 		if (!ok)
 			return (0);
 		free(in->argv[0]);
-		bt = _strchr(ok->s, '=');
+		bt = wstrchr(ok->s, '=');
 		if (!bt)
 			return (0);
-		bt = _strdup(bt + 1);
+		bt = wstrdup(bt + 1);
 		if (!bt)
 			return (0);
 		in->argv[0] = bt;

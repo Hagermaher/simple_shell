@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * _strcmp - Remable
+ * wstrcmp - Remable
  * @c1: Structning po
  * @c2: fd
  * Return: Aays 0
  */
 
-int _strcmp(char *c1, char *c2)
+int wstrcmp(char *c1, char *c2)
 {
 	while (*c1 && *c2)
 	{

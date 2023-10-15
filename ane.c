@@ -10,7 +10,8 @@
 
 kat *ane(kat **h, const char *s, int n)
 {
-	kat *nn, *ok;
+	kat *nn;
+	kat *ok;
 
 	if (!h)
 		return (NULL);
@@ -22,7 +23,7 @@ kat *ane(kat **h, const char *s, int n)
 	nn->n = n;
 	if (s)
 	{
-		nn->s = _strdup(s);
+		nn->s = wstrdup(s);
 		if (!nn->s)
 		{
 			free(nn);

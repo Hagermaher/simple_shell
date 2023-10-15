@@ -8,7 +8,7 @@
 void fc(mnmt *in)
 {
 	char *pa = NULL;
-	int w; 
+	int w;
 	int ke;
 
 	in->p = in->argv[0];
@@ -31,7 +31,7 @@ void fc(mnmt *in)
 	}
 	else
 	{
-		if ((inter(in) || gen(in, "PATH=") || in->argv[0][0] == '/') 
+		if ((inter(in) || gen(in, "PATH=") || in->argv[0][0] == '/')
 				&& ic(in, in->argv[0]))
 			foc(in);
 		else if (*(in->arg) != '\n')

@@ -31,7 +31,7 @@ char **lts(kat *h)
 			free(ss);
 			return (NULL);
 		}
-		s = _strcpy(s, ok->s);
+		s = wstrcpy(s, ok->s);
 		ss[o] = s;
 	}
 	ss[o] = NULL;

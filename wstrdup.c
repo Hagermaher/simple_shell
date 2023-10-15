@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * _strdup - Remable
+ * wstrdup - Remable
  * @s: Structning po
  * Return: Aays 0
  */
 
-char *_strdup(const char *s)
+char *wstrdup(const char *s)
 {
 	int l;
 	char *r;

@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * _strcat - Remable
+ * wstrcat - Remable
  * @d: Structning po
  * @s: c
  * Return: Aays 0
  */
 
-char *_strcat(char *d, char *s)
+char *wstrcat(char *d, char *s)
 {
 	char *r;
 

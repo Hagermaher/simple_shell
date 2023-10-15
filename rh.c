@@ -6,24 +6,15 @@
  */
 int rh(mnmt *in)
 {
-	int w;
-	int la;
-	int lic;
-	ssize_t rl;
-	ssize_t fs;
-	ssize_t f;
+	int w, la = 0, lic = 0;
+	ssize_t rl, f, fs = 0;
 	struct stat st;
-	char *bu;
-	char *fin;
+	char *bu, *fin;
 
-	la = 0;
-	lic = 0;
-	fs = 0;
 	bu = NULL;
 	fin = ghf(in);
 	if (!fin)
 		return (0);
-
 	f = open(fin, O_RDONLY);
 	free(fin);
 	if (f == -1)
