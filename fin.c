@@ -27,6 +27,6 @@ void fin(mnmt *in, int t)
 		bf((void **)in->cb);
 		if (in->rf > 2)
 			close(in->rf);
-		_putchar(-1);
+		wputchar(-1);
 	}
 }

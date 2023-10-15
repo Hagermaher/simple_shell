@@ -8,12 +8,15 @@
  */
 char *fpa(mnmt *in, char *pas, char *cm)
 {
-	int w = 0, cpo = 0;
+	int w;
+	int cpo;
 	char *pa;
 
+	w = 0;
+	cpo = 0;
 	if (!pas)
 		return (NULL);
-	if ((_strlen(cm) > 2) && sw(cm, "./"))
+	if ((wstrlen(cm) > 2) && sw(cm, "./"))
 	{
 		if (ic(in, cm))
 			return (cm);
@@ -24,11 +27,11 @@ char *fpa(mnmt *in, char *pas, char *cm)
 		{
 			pa = dc(pas, cpo, w);
 			if (!*pa)
-				_strcat(pa, cm);
+				wstrcat(pa, cm);
 			else
 			{
-				_strcat(pa, "/");
-				_strcat(pa, cm);
+				wstrcat(pa, "/");
+				wstrcat(pa, cm);
 			}
 			if (ic(in, pa))
 				return (pa);

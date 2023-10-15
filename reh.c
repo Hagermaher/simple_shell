@@ -6,13 +6,15 @@
  */
 int reh(mnmt *in)
 {
-	kat *nd = in->his;
-	int w = 0;
+	kat *nd;
+	int w;
 
+	nd = in->his;
+	w = 0;
 	while (nd)
 	{
 		nd->n = w++;
-		nd = nd->n;
+		nd = nd->x;
 	}
 	return (in->hisc = w);
 }

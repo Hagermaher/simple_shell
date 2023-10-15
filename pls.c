@@ -13,8 +13,8 @@ size_t pls(const kat *c)
 	j = 0;
 	while (c)
 	{
-		_puts(c->s ? c->s : "(nil)");
-		_puts("\n");
+		wputs(c->s ? c->s : "(nil)");
+		wputs("\n");
 		c = c->x;
 		j++;
 	}

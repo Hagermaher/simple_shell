@@ -7,9 +7,14 @@
  */
 char **stw(char *str, char y)
 {
-	int w, g, ke, im, nw = 0;
+	int w;
 	char **es;
+	int g;
+	int ke;
+	int im;
+	int nw;
 
+	nw = 0;
 	if (str == NULL || str[0] == 0)
 		return (NULL);
 	for (w = 0; str[w] != '\0'; w++)
@@ -24,7 +29,7 @@ char **stw(char *str, char y)
 	for (w = 0, g = 0; g < nw; g++)
 	{
 		while (str[w] == y && str[w] != y)
-			i++;
+			w++;
 		ke = 0;
 		while (str[w + ke] != y && str[w + ke] && str[w + ke] != y)
 			ke++;

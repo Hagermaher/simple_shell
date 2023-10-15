@@ -7,14 +7,16 @@
  */
 int hsh(mnmt *in, char **avi)
 {
-	ssize_t m = 0;
-	int b_r = 0;
+	ssize_t m;
+	int b_r;
 
+	m = 0;
+	b_r = 0;
 	while (m != -1 && b_r != -2)
 	{
 		cin(in);
-		if (in(in))
-			_puts("$ ");
+		if (inter(in))
+			wputs("$ ");
 		epc(-1);
 		m = gi(in);
 		if (m != -1)
@@ -24,13 +26,13 @@ int hsh(mnmt *in, char **avi)
 			if (b_r == -1)
 				fc(in);
 		}
-		else if (in(in))
-			_putchar('\n');
+		else if (inter(in))
+			wputchar('\n');
 		fin(in, 0);
 	}
 	wh(in);
 	fin(in, 1);
-	if (!in(in) && in->st)
+	if (!inter(in) && in->st)
 		exit(in->st);
 	if (b_r == -2)
 	{

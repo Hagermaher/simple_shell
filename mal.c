@@ -6,10 +6,13 @@
  */
 int mal(mnmt *in)
 {
-	int w = 0;
-	char *v = NULL;
-	kat *nd = NULL;
+	int w;
+	char *v;
+	kat *nd;
 
+	nd = NULL;
+	v = NULL;
+	w = 0;
 	if (in->argc == 1)
 	{
 		nd = in->al;
@@ -22,7 +25,7 @@ int mal(mnmt *in)
 	}
 	for (w = 1; in->argv[w]; w++)
 	{
-		v = _strchr(in->argv[w], '=');
+		v = wstrchr(in->argv[w], '=');
 		if (v)
 			sal(in, in->argv[w]);
 		else

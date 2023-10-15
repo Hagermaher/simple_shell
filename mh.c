@@ -9,8 +9,8 @@ int mh(mnmt *in)
 	char **ag;
 
 	ag = in->argv;
-	_puts("help call works. Function not yet implemented\n");
+	wputs("help call works. Function not yet implemented\n");
 	if (0)
-		_puts(*ag);
+		wputs(*ag);
 	return (0);
 }

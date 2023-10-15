@@ -4,10 +4,12 @@
  * @in: parameter
  * Return: void
  */
+
 void fc(mnmt *in)
 {
 	char *pa = NULL;
-	int w, ke;
+	int w;
+	int ke;
 
 	in->p = in->argv[0];
 	if (in->lcf == 1)
@@ -21,7 +23,7 @@ void fc(mnmt *in)
 	if (!ke)
 		return;
 
-	pa = fp(in, gen(in, "PATH="), in->argv[0]);
+	pa = fpa(in, gen(in, "PATH="), in->argv[0]);
 	if (pa)
 	{
 		in->p = pa;
@@ -29,8 +31,8 @@ void fc(mnmt *in)
 	}
 	else
 	{
-		if ((in(in) || gen(in, "PATH=")
-			|| in->argv[0][0] == '/') && ic(in, in->argv[0]))
+		if ((inter(in) || gen(in, "PATH=") || in->argv[0][0] == '/')
+				&& ic(in, in->argv[0]))
 			foc(in);
 		else if (*(in->arg) != '\n')
 		{

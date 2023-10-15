@@ -6,16 +6,19 @@
  */
 int pal(kat *nd)
 {
-	char *v = NULL, *o = NULL;
+	char *v;
+	char *o;
 
+	o = NULL;
+	v = NULL;
 	if (nd)
 	{
-		v = _strchr(nd->s, '=');
+		v = wstrchr(nd->s, '=');
 		for (o = nd->s; o <= v; o++)
-			_putchar(*o);
-		_putchar('\'');
-		_puts(v + 1);
-		_puts("'\n");
+			wputchar(*o);
+		wputchar('\'');
+		wputs(v + 1);
+		wputs("'\n");
 		return (0);
 	}
 	return (1);
