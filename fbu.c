@@ -19,11 +19,11 @@ int fbu(mnmt *in)
 		{NULL, NULL}
 	};
 
-	for (w = 0; qb[w].type; w++)
-		if (_strcmp(in->argv[0], qb[w].type) == 0)
+	for (w = 0; qb[w].t; w++)
+		if (_strcmp(in->argv[0], qb[w].t) == 0)
 		{
-			in->lic++;
-			b_i_r = qbin[w].f(in);
+			in->lc++;
+			b_i_r = qb[w].f(in);
 			break;
 		}
 	return (b_i_r);

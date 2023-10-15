@@ -9,7 +9,7 @@ int mcd(mnmt *in)
 	char *q, *dr, buff[1024];
 	int ch_r;
 
-	q = getcwd(buffer, 1024);
+	q = getcwd(buff, 1024);
 	if (!q)
 		_puts("TODO: >>getcwd failure emsg here<<\n");
 	if (!in->argv[1])

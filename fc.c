@@ -9,14 +9,14 @@ void fc(mnmt *in)
 	char *pa = NULL;
 	int w, ke;
 
-	in->pa = in->argv[0];
+	in->p = in->argv[0];
 	if (in->lcf == 1)
 	{
-		in->lic++;
+		in->lc++;
 		in->lcf = 0;
 	}
-	for (w = 0, ke = 0; in->arg[i]; w++)
-		if (!isd(in->arg[i], " \t\n"))
+	for (w = 0, ke = 0; in->arg[w]; w++)
+		if (!isd(in->arg[w], " \t\n"))
 			ke++;
 	if (!ke)
 		return;
@@ -24,7 +24,7 @@ void fc(mnmt *in)
 	pa = fp(in, gen(in, "PATH="), in->argv[0]);
 	if (pa)
 	{
-		in->pa = pa;
+		in->p = pa;
 		foc(in);
 	}
 	else

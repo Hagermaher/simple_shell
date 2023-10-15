@@ -16,7 +16,7 @@ int mal(mnmt *in)
 		while (nd)
 		{
 			pal(nd);
-			nd = nd->n;
+			nd = nd->x;
 		}
 		return (0);
 	}

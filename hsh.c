@@ -19,8 +19,8 @@ int hsh(mnmt *in, char **avi)
 		m = gi(in);
 		if (m != -1)
 		{
-			ssin(in, avi);
-			b_r = fbu(info);
+			ssn(in, avi);
+			b_r = fbu(in);
 			if (b_r == -1)
 				fc(in);
 		}
