@@ -9,7 +9,8 @@
 char *dc(char *pas, int star, int sto)
 	{
 	static char bu[1024];
-	int w, ke;
+	int w;
+	int ke;
 
 	w = 0;
 	ke = 0;

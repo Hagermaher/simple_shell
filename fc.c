@@ -7,10 +7,11 @@
 
 void fc(mnmt *in)
 {
-	char *pa = NULL;
+	char *pa;
 	int w;
 	int ke;
 
+	pa = NULL;
 	in->p = in->argv[0];
 	if (in->lcf == 1)
 	{

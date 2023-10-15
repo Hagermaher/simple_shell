@@ -8,8 +8,9 @@
 
 void ff(char **bb)
 {
-	char **o = bb;
-
+	char **o;
+	
+	o = bb;
 	if (!bb)
 		return;
 	while (*bb)

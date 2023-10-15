@@ -11,9 +11,8 @@ int er(char *es)
 
 	w = 0;
 	res = 0;
-
 	if (*es == '+')
-		es++;  /* TODO: why does this make main return 255? */
+		es++;
 	for (w = 0;  es[w] != '\0'; w++)
 	{
 		if (es[w] >= '0' && es[w] <= '9')

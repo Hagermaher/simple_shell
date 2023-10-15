@@ -8,8 +8,9 @@
  */
 int bhl(mnmt *in, char *bu, int lic)
 {
-	kat *nd = NULL;
+	kat *nd;
 
+	nd = NULL;
 	if (in->his)
 		nd = in->his;
 	ane(&nd, bu, lic);

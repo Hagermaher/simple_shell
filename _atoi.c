@@ -6,13 +6,15 @@
  */
 int _atoi(char *u)
 {
-	int w, si, fl, op;
+	int w;
+	int si;
+	int fl;
+	int op;
 	unsigned int res;
 
 	si = 1;
 	fl = 0;
 	res = 0;
-
 	for (w = 0; u[w] != '\0' && fl != 2; w++)
 	{
 		if (u[w] == '-')
@@ -27,11 +29,9 @@ int _atoi(char *u)
 		else if (fl == 1)
 			fl = 2;
 	}
-
 	if (si == -1)
 		op = -res;
 	else
 		op = res;
-
 	return (op);
 }

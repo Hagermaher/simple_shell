@@ -9,7 +9,8 @@
 
 int dnai(kat **h, unsigned int ix)
 {
-	kat *ok, *pn;
+	kat *ok;
+	kat *pn;
 	unsigned int m;
 
 	m = 0;
