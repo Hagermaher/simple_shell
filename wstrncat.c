@@ -3,6 +3,7 @@
 /**
  * wstrncat - concatenates two strings
  * @dest: inut value
+ * @src: input value
  * @n: input value
  * Return: string
  */
