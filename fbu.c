@@ -20,8 +20,6 @@ int fbu(mnmt *in)
 		{NULL, NULL}
 	};
 
-	for (w = 0; qb[w].t; w++)
-		if (wstrcmp(in->argv[0], qb[w].t) == 0)
 	b_i_r = -1;
 	for (w = 0; qb[w].t; w++)
 		if (wstrcmp(in->argv[0], qb[w].t) == 0)

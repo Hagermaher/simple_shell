@@ -14,7 +14,7 @@ ssize_t gi(mnmt *in)
 	char **bu_p = &(in->arg);
 	char *p;
 
-	bu_p = &(in->arg):
+	bu_p = &(in->arg);
 	wputchar(-1);
 	vr = ibu(in, &bu, &l);
 	if (vr == -1)

@@ -13,7 +13,7 @@
 void chc(mnmt *in, char *b, size_t *bt, size_t h, size_t l)
 {
 	size_t k;
-		
+
 	k = *bt;
 	if (in->cbt == 2)
 	{

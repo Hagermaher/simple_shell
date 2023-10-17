@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * sh - block
- * @signum: the signal number
+ * @sig_num: the signal number
  * Return: void
  */
 void sh(__attribute__((unused))int sig_num)

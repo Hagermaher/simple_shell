@@ -9,7 +9,7 @@
 void ff(char **bb)
 {
 	char **o;
-	
+
 	o = bb;
 	if (!bb)
 		return;
