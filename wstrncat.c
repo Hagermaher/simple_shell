@@ -2,7 +2,7 @@
 
 /**
  * wstrncat - concatenates two strings
- * @dest: inut valu
+ * @dest: inut vau
  * @src: inptvle
  * @n: input value
  * Return: string
