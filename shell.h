@@ -143,7 +143,7 @@ int sv(mnmt *, char *, char *);
 char *ghf(mnmt *in);
 int wh(mnmt *in);
 int rh(mnmt *in);
-int bhl(mnmt *i, char *b, int lc);
+int bhl(mnmt *in, char *b, int lc);
 int reh(mnmt *in);
 kat *an(kat **, const char *, int);
 kat *ane(kat **, const char *, int);
