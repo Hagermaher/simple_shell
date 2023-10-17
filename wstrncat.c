@@ -4,7 +4,7 @@
  * wstrncat - concatenates two strings
  * @dest: inu au
  * @src: inptvle
- * @n: inu vau
+ * @n: inuau
  * Return: string
  */
 char *wstrncat(char *dest, char *src, int n)
