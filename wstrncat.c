@@ -3,7 +3,7 @@
 /**
  * wstrncat - concatenates two strings
  * @dest: inu au
- * @src: inptl
+ * @src: inpt
  * @n: inuau
  * Return: string
  */
