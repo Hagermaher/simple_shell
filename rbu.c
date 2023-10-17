@@ -8,8 +8,9 @@
  */
 ssize_t rbu(mnmt *in, char *bu, size_t *w)
 {
-	ssize_t vr = 0;
+	ssize_t vr;
 
+	vr = 0;
 	if (*w)
 		return (0);
 	vr = read(in->rf, bu, 1024);

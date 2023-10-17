@@ -9,9 +9,10 @@
 
 char *gen(mnmt *in, const char *es)
 {
-	kat *ok = in->q;
+	kat *ok;
 	char *v;
 
+	ok = in->q;
 	while (ok)
 	{
 		v = sw(ok->s, es);

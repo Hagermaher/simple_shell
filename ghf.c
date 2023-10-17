@@ -7,7 +7,8 @@
  */
 char *ghf(mnmt *in)
 {
-	char *bu, *dr;
+	char *bu;
+	char *dr;
 
 	dr = gen(in, "HOME=");
 	if (!dr)

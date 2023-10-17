@@ -7,10 +7,14 @@
 ssize_t gi(mnmt *in)
 {
 	static char *bu;
-	static size_t w, g, l;
+	static size_t w;
+	static size_t g;
+	static size_t l;
 	ssize_t vr = 0;
-	char **bu_p = &(in->arg), *p;
+	char **bu_p = &(in->arg);
+	char *p;
 
+	bu_p = &(in->arg):
 	wputchar(-1);
 	vr = ibu(in, &bu, &l);
 	if (vr == -1)

@@ -1,10 +1,12 @@
 #include "shell.h"
+
 /**
- * _atoi - convert
+ * watoi - convert
  * @u: string to convert
  * Return: 0
  */
-int _atoi(char *u)
+
+int watoi(char *u)
 {
 	int w;
 	int si;

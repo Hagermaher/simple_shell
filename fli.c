@@ -8,7 +8,9 @@
 
 void fli(kat **hp)
 {
-	kat *ok, *nn, *h;
+	kat *ok;
+	kat *nn;
+	kat *h;
 
 	if (!hp || !hp)
 		return;

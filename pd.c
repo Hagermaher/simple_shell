@@ -8,9 +8,12 @@
 int pd(int inp, int f)
 {
 	int (*wwputchar)(char) = wputchar;
-	int w, co = 0;
-	unsigned int abs, cur;
+	int w;
+	int co;
+	unsigned int abs;
+	unsigned int cur;
 
+	co = 0;
 	if (f == STDERR_FILENO)
 		wwputchar = epc;
 	if (inp < 0)

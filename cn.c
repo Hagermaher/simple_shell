@@ -10,10 +10,12 @@ char *cn(long int nu, int ba, int fl)
 {
 	static char *arr;
 	static char buff[50];
-	char sig = 0;
+	char sig;
 	char *pr;
-	unsigned long vii = nu;
+	unsigned long vii;
 
+	sig = 0;
+	vii = nu;
 	if (!(fl & 2) && nu < 0)
 	{
 		vii = -nu;

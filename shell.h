@@ -115,7 +115,7 @@ int bf(void **);
 int inter(mnmt *);
 int isd(char, char *);
 int isa(int);
-int _atoi(char *);
+int watoi(char *);
 int er(char *);
 void pe(mnmt *, char *);
 int pd(int, int);

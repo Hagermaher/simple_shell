@@ -11,7 +11,6 @@ void foc(mnmt *in)
 	chi_p = fork();
 	if (chi_p == -1)
 	{
-		/* TODO: PUT ERROR FUNCTION */
 		perror("Error:");
 		return;
 	}
@@ -24,7 +23,6 @@ void foc(mnmt *in)
 			exit(126);
 			exit(1);
 		}
-		/* TODO: PUT ERROR FUNCTION */
 	}
 	else
 	{

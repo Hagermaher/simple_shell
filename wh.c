@@ -7,9 +7,11 @@
 int wh(mnmt *in)
 {
 	ssize_t f;
-	char *fin = ghf(in);
-	kat *nd = NULL;
+	char *fin;
+	kat *nd;
 
+	fin = ghf(in);
+	nd = NULL;
 	if (!fin)
 		return (-1);
 

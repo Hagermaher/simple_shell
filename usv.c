@@ -9,10 +9,12 @@
 
 int usv(mnmt *in, char *m)
 {
-	kat *ok = in->q;
-	size_t h = 0;
+	kat *ok;
+	size_t h;
 	char *b;
 
+	ok = in->q;
+	h = 0;
 	if (!ok || !m)
 		return (0);
 	while (ok)
