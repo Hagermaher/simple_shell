@@ -40,7 +40,8 @@ typedef struct ka
  * @q: linked list
  * @qenv: environ
  * @his: history
- * @al : alias
+ * @al : aliasi
+ * @environ: enviro
  * @envch: environ changed
  * @st: return status
  * @cb: address
@@ -69,7 +70,8 @@ typedef struct mnm
 	int rf;
 	int hisc;
 } mnmt;
-#define QIN {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
+#define QIN \
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 	0, 0, 0}
 /**
  * struct qbin - string  related fun
